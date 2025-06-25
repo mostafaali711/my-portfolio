@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- لدعم اللغه العربيه -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز معانا الان</title>
+    <style>
+    body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    background-color: #eee;
+    }
+    .book-now {
+    background-color: #7db3ff;
+    max-width: 500px;
+    text-align: center;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-radius: 21px;
+    }
+    label {
+    display: block;
+    color: #444;
+    font-weight: bold;
+    }
+    input, select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+    input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
+</head>
+<body>
+    <div class="book-now">
+        <h1>احجز معانا دلوقتي</h1>
+        <form action="" method="POST">
+
+            <label for="name">الاسم بالكامل:</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">رقم التلفون</label>
+            <input type="tel" id="phone" placeholder="مثال: 01033474062" pattern="[0-9]{11}" required>
+
+            <label for="service">نوع الخدمه: </label>
+            <select name="service" id="service" required>
+                <option value="">-- اختر الخدمه --</option>
+                <option value="تصميم موقع">تصميم موقع</option>
+                <option value="تصميم صفحه هبوط">تصميم صفحة هبوط</option>
+                <option value="تفريغ نصوص">تفريغ نصوص</option>
+                <option value="تحويل pdf">تحويل pdf الي word</option>
+            </select>
+            <label for="dat">التاريخ:</label>
+            <input type="date" id="dat" name="date" required>
+
+            <label for="time">الوقت:</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="ارسال الطلب" name="send">
+        </form>
+    </div>
+</body>
+</html>
