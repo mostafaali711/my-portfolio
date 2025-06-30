@@ -70,12 +70,58 @@ header img {
     height: 150px;
     border-radius: 50%;
 }
+@media(max-width: 767px) {
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+}
 header .container nav {
     direction: rtl;
+}
+header .container nav .links {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+@media(min-width: 768px) {
+    header .container nav .links {
+        display: none;
+    }
+}
+@media(max-width: 767px) {
+    header .container nav .links:hover ~ ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        width: 50%;
+        left: 27%;
+        background-color: cadetblue;
+        z-index: 10000;
+    }
+}
+.container nav .links .meuo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 30px;
+}
+.container nav .links .meuo span {
+    background-color: blue;
+    height: 3px;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 header .container nav ul {
     display: flex;
+    transition: all 0.3s ease;
+}
+@media(max-width: 767px) {
+    header .container nav ul {
+        display: none;
+    }
 }
 header .container nav ul li {
     padding: 15px;
@@ -144,9 +190,11 @@ section img {
 section a {
     background-color: cadetblue;
     color: white;
-    display: block;
     padding: 10px;
     border-radius: 8px;
+    display: inline-block;
+    max-width: 100%;
+    min-width: 50%;
 }
 /* end hero-section  */
 
