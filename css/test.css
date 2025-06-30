@@ -42,9 +42,11 @@ main {
 header {
     position: relative;
     background-color: #007bff;
-    background-size: cover;
     padding: 10px;
+    margin: auto;
     border-bottom: 3px solid #615454;
+    width: 100%;
+    max-width: 1200px;
 }
 
 nav {
@@ -58,6 +60,7 @@ nav {
     padding: 0 3px 0 3px;
     font-size: 40px;
 }
+
 nav .mega-mnuo {
     position: relative;
     cursor: pointer;
@@ -144,6 +147,13 @@ header .kwon_me p {
     font-size: 22px;
     color: white;
 }
+/* start media  */
+@media(max-width: 767px) {
+    .logo h1 {
+        font-size: 24px;
+    }
+}
+/* end media  */
 /* start Get to know me  */
 
 .Get_to_know_me .info {
@@ -165,6 +175,14 @@ header .kwon_me p {
 .Get_to_know_me .info .discription p {
     font-size: 22px;
     line-height: 1.6;
+}
+@media(max-width: 767px) {
+    .Get_to_know_me .info .discription {
+        font-size: 16px;
+    }
+    .Get_to_know_me .info .discription p {
+        font-size: 16px;
+    }
 }
 .discription ol {
     margin-right: 15px;
