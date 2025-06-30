@@ -154,11 +154,23 @@ header .kwon_me p {
 
 .Get_to_know_me .info .discription {
     max-width: 60%;
+    direction: rtl;
 }
-
+.Get_to_know_me .info .discription h3 {
+    padding: 10px 0;
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: #000000;
+}
 .Get_to_know_me .info .discription p {
     font-size: 22px;
     line-height: 1.6;
+}
+.discription ol {
+    margin-right: 15px;
+}
+.discription ol li {
+    padding: 8px 0;
 }
 .info img {
     width: 200px;
