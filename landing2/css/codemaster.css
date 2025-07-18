@@ -149,7 +149,7 @@ ol {
     display: table;
 }
 section form {
-    width: 500px;
+    max-width: 500px;
     margin: 20px auto;
     background-color: #13217e;
     padding: 25px;
